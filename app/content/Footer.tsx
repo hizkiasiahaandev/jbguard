@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 text-center md:text-right">
-          © 2026 JB Guard ID. <br/> Melindungi 12,000+ Gamers dari Penipuan.
+          © 2026 JB Guard ID. <br/> Melindungi Gamers dari Penipuan.
         </div>
       </div>
     </footer>
