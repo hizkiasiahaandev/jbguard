@@ -1,6 +1,6 @@
 "use client"
 
-import { ShieldCheck, Facebook, MessageSquare } from 'lucide-react';
+import { ShieldCheck, Facebook, MessageSquare, Video } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -27,9 +27,26 @@ export default function Footer() {
         </div>
         
         <div className="flex gap-4">
-          <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 transition-all cursor-pointer group">
+
+          <a 
+            href="https://www.facebook.com/profile.php?id=61585599650937" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 transition-all group"
+          >
             <Facebook className="w-5 h-5 text-slate-600 group-hover:text-[#4F46E5]" />
-          </div>
+          </a>
+
+  
+          <a 
+            href="https://www.tiktok.com/@belajar_pemrograman" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 transition-all group"
+          >
+            <Video className="w-5 h-5 text-slate-600 group-hover:text-[#4F46E5]" />
+          </a>
+
           <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 transition-all cursor-pointer group">
             <MessageSquare className="w-5 h-5 text-slate-600 group-hover:text-[#4F46E5]" />
           </div>

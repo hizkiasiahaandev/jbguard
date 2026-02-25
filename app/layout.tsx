@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "JB GUARD - Portal Keamanan Transaksi JB Online",
     description: "Lacak database penipu dan cek keaslian Midman JB terintegrasi komunitas.",
-    url: "https://jbguard.id", 
+    url: "https://jbguard.vercel.app/", 
     siteName: "JB GUARD",
     images: [
       {
