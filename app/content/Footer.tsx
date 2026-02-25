@@ -1,6 +1,6 @@
 "use client"
 
-import { ShieldCheck, Facebook, MessageSquare, Video } from 'lucide-react';
+import { ShieldCheck, Facebook, Video } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -47,9 +47,7 @@ export default function Footer() {
             <Video className="w-5 h-5 text-slate-600 group-hover:text-[#4F46E5]" />
           </a>
 
-          <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 transition-all cursor-pointer group">
-            <MessageSquare className="w-5 h-5 text-slate-600 group-hover:text-[#4F46E5]" />
-          </div>
+    
         </div>
 
         <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 text-center md:text-right">
