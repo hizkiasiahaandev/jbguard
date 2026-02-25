@@ -16,7 +16,6 @@ import {
 } from 'lucide-react';
 import Navbar from './content/Navbar';
 import Footer from './content/Footer';
-import Hero from './components/Hero';
 import { midmen, scammers } from './data/database';
 
 export default function Page() {
@@ -38,13 +37,12 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-900 font-sans selection:bg-indigo-100">
       <Navbar />
-      <Hero />
 
-      <main className="max-w-7xl mx-auto px-5 md:px-6 pb-24">
-        <div className="bg-white border border-slate-200 rounded-xl p-6 md:p-8 mb-8 shadow-sm">
+      <main className="max-w-7xl mx-auto px-5 md:px-6 pt-28 pb-24">
+        <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 mb-8 shadow-sm">
           <div className="flex flex-col md:flex-row gap-6 items-end">
             <div className="grow w-full">
-              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 block ml-2">Sistem Verifikasi Database</label>
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 block ml-2 text-left">Sistem Verifikasi Database</label>
               <div className="relative group">
                 <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
                 <input
@@ -80,10 +78,10 @@ export default function Page() {
           <div className="grow text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-black text-rose-600 uppercase tracking-tight mb-3">PERINGATAN KERAS PENGGUNA JB!</h2>
             <p className="text-slate-600 font-bold text-sm md:text-base leading-relaxed">
-              Dilarang keras melakukan transaksi <span className="text-rose-600">DIRECT (TF LANGSUNG)</span> kepada siapapun meskipun profilnya terlihat meyakinkan. Gunakan selalu jasa Rekber/Midman yang ada di daftar verified kami untuk menjamin keamanan dana anda.
+              Dilarang keras melakukan transaksi <span className="text-rose-600">DIRECT (TF LANGSUNG)</span> kepada siapapun meskipun profilnya terlihat meyakinkan. Gunakan selalu jasa Rekber/Midman yang ada di daftar verified kami.
             </p>
           </div>
-          <div className="bg-rose-50/50 px-6 py-4 rounded-2xl border border-rose-100 text-center shrink-0">
+          <div className="bg-rose-50/50 px-6 py-4 rounded-2xl border border-rose-100 text-center shrink-0 w-full md:w-auto">
             <p className="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-1">STATUS SISTEM</p>
             <p className="text-lg font-black text-rose-600 uppercase">WASPADA</p>
           </div>
@@ -134,14 +132,14 @@ export default function Page() {
                       <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
                         <div className="flex items-center gap-2 mb-1 text-slate-400">
                           <Smartphone className="w-3 h-3" />
-                          <span className="text-[9px] font-black uppercase">WhatsApp</span>
+                          <span className="text-[9px] font-black uppercase tracking-tighter">WhatsApp</span>
                         </div>
                         <p className="text-xs font-black text-slate-700">{item.wa || "---"}</p>
                       </div>
                       <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
                         <div className="flex items-center gap-2 mb-1 text-slate-400">
                           {activeTab === 'midmen' ? <Instagram className="w-3 h-3" /> : <AlertTriangle className="w-3 h-3" />}
-                          <span className="text-[9px] font-black uppercase">{activeTab === 'midmen' ? 'Instagram' : 'Status'}</span>
+                          <span className="text-[9px] font-black uppercase tracking-tighter">{activeTab === 'midmen' ? 'Instagram' : 'Status'}</span>
                         </div>
                         <p className="text-xs font-black text-slate-700">{activeTab === 'midmen' ? (item.ig || "---") : "BLACKLIST"}</p>
                       </div>
@@ -159,8 +157,8 @@ export default function Page() {
                             <ShieldAlert className="w-6 h-6 text-white" />
                           </div>
                           <div className="text-left leading-tight">
-                            <p className="text-[12px] font-black uppercase tracking-tighter">PERINGATAN KERAS ADMIN JB!</p>
-                            <p className="text-[10px] font-medium opacity-90 uppercase leading-none mt-1">
+                            <p className="text-[12px] font-black uppercase tracking-tighter leading-none mb-1">PERINGATAN KERAS ADMIN JB!</p>
+                            <p className="text-[10px] font-medium opacity-90 uppercase leading-none">
                               {activeTab === 'midmen' 
                                 ? "WAJIB IDENTIK! Cek Link FB & WA Secara Detail Sebelum Transfer!" 
                                 : "DILARANG TRANSAKSI! Database Ini Adalah Penipu Valid & Berbahaya!"}
