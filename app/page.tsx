@@ -148,7 +148,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex flex-col gap-4">
-                      <a href={item.fb} target="_blank" className={`w-full ${activeTab === 'midmen' ? 'bg-indigo-600' : 'bg-slate-900'} text-white py-4 rounded-xl font-black text-sm uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-all shadow-xl`}>
+                      <a href={item.fb} target="_blank" rel="noopener noreferrer" className={`w-full ${activeTab === 'midmen' ? 'bg-indigo-600' : 'bg-slate-900'} text-white py-4 rounded-xl font-black text-sm uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-all shadow-xl`}>
                         <Facebook className="w-5 h-5" />
                         {activeTab === 'midmen' ? 'Messenger Profil Utama' : 'Cek Profil Penipu'}
                       </a>
