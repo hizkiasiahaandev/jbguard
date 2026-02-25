@@ -161,4 +161,57 @@ export const midmen: Midman[] = [
   }
 ];
 
-export const scammers: Scammer[] = [];
+export const scammers: Scammer[] = [
+  {
+    id: 1,
+    name: "Raden Cahya Buwana",
+    alias: "Raden Cahya Buwana (REKBER CLONE)",
+    fb: "https://m.facebook.com/61586428563526",
+    wa: "TIDAK TERDATA",
+    ig: "",
+    modus: [
+      { title: "Kloning Admin", desc: "Meniru nama & profil admin asli untuk menipu" },
+      { title: "Iming-iming Amanah", desc: "Menggunakan kata-kata 'Amanah' & '24 Jam' untuk meyakinkan korban" }
+    ],
+    avatar: "https://api.dicebear.com/9.x/bottts/svg?seed=Raden&backgroundColor=f87171"
+  },
+  {
+    id: 2,
+    name: "Bobby Bobby",
+    alias: "Bobby (CLONE ADMIN CV)",
+    fb: "https://m.facebook.com/hendy.arshavin.1",
+    wa: "TIDAK TERDATA",
+    ig: "",
+    modus: [
+      { title: "Jasa Convert Palsu", desc: "Menawarkan CV Pulsa, Dana, & Binance untuk menguras saldo" },
+      { title: "Slogan Palsu", desc: "Menggunakan slogan 'Yang asli ada badaknya' untuk mengelabui korban" }
+    ],
+    avatar: "https://api.dicebear.com/9.x/bottts/svg?seed=Bobby&backgroundColor=ef4444"
+  },
+  {
+    id: 3,
+    name: "Radiansyah Putra",
+    alias: "Radiansyah Putra (FAKE REKBER)",
+    fb: "https://m.facebook.com/radiansyahh.putra",
+    wa: "0882-4241-1207",
+    ig: "Radiansyah Putra",
+    modus: [
+      { title: "WhatsApp Scam", desc: "Mengarahkan transaksi ke WA untuk menghindari pantauan grup FB" },
+      { title: "Top Up Ilegal", desc: "Menawarkan jasa top up lewat IG sebagai kedok penipuan" }
+    ],
+    avatar: "https://api.dicebear.com/9.x/bottts/svg?seed=Radiansyah&backgroundColor=b91c1c"
+  },
+  {
+    id: 4,
+    name: "Muhammad Radit Saputra",
+    alias: "Radit (FAKE REKBER VERIFIED)",
+    fb: "https://m.facebook.com/radit.rekber",
+    wa: "TIDAK TERDATA",
+    ig: "",
+    modus: [
+      { title: "Klaim Verified Palsu", desc: "Menggunakan simbol centang dan nama samaran agar terlihat resmi" },
+      { title: "Spesialis Akun Game", desc: "Target utama transaksi jual beli akun game online" }
+    ],
+    avatar: "https://api.dicebear.com/9.x/bottts/svg?seed=Radit&backgroundColor=991b1b"
+  }
+];
